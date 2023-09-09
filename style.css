@@ -1,0 +1,173 @@
+body{
+    margin: 0;
+    background-color: rgb(30, 30,30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border : none;
+    padding: 10px;
+}
+.btn:hover{
+    cursor : pointer;
+    color: rgb(30, 30,30);
+    font-size: larger;
+}
+.btn{
+    position: fixed;
+    top: 0.8%;
+    right: 4.4%;
+    width: 22%;
+    padding: 15;
+    text-align: center;
+    background: rgb(30, 30,30);
+    border: solid rgb(30, 30,30) 2px;
+    font-size: larger;
+    border-radius: 5px;
+    z-index: 1;
+    color: green;
+}
+span{
+    
+    background-color: green;
+    position: absolute;
+    transition: 0.5s;
+    height: 100%;
+    width: 0%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    color: rgb(30, 30,30);
+    border: solid rgb(30, 30,30);
+}
+nav{
+    position: fixed;
+    top: 0px;
+    color: rgb(30, 30,30);
+    width: 100%;
+    z-index: 1;
+    text-align: left ;
+    background-color: green;
+    border-radius: 5px;
+}
+.h{
+    position: relative;
+    left: 6%;
+    font-size: x-large;
+    height: 100%;
+    width: 100%;
+}
+.boxs{
+    position: fixed ;
+    right: 0.5%;
+    top:8.8%;
+    width: 30%;
+    height: 91.5%;
+    overflow-y: scroll;  
+}
+.boxs::-webkit-scrollbar{
+    width: 10px;
+}
+.boxs::-webkit-scrollbar-thumb{
+    background: green;
+    border-radius: 10px;
+}
+.boxs::-webkit-scrollbar-track{
+    background: transparent;
+    border-radius: 10px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width:85%;
+    height: 18%;
+    border: solid green 2px;
+    background: transparent; 
+    margin: auto;
+    margin-top: 3%;
+    border-radius: 5px;
+    cursor: pointer;
+    color: green;
+}
+.box:hover{
+    background-color: green;
+    border: solid rgb(30, 30,30) 2px;
+    color: rgb(30, 30,30);
+}
+.box video{
+    position: relative;
+    width: 55%;
+    height: 100%;
+    left: 1.5%;
+    border-radius: 5px;
+}
+.title{
+    height: 100%;
+    width: 50%;
+    color: green;
+    right: 0%;
+    text-align: center;
+    padding-top: 10%;
+}
+.box:hover .title{
+    color: rgb(30, 30,30);
+}
+.play{
+    position: fixed;
+    width: 60%;
+    height: 70%;
+    top: 14%;
+    left: 4%;
+    background-color:transparent;
+    border: solid green 2px;
+    border-radius: 5px;
+    align-content: center;
+    cursor: pointer;
+}
+.play:hover{
+    border-radius: solid grren 5px;
+    border:solid green 3px;
+}
+.ip{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius:5px ;
+}
+.tit{
+    position: fixed;
+    top: 86%;
+    left: 4%;
+    width: 60%;
+    height: 10%;
+    background-color:transparent;
+    border: solid green 2px;
+    border-radius: 5px;
+    color: green;
+    
+}
+.tit:hover span{
+    width: 100%;
+}
+.tit:hover{
+    border: solid green 3px;
+    color: rgb(30, 30,30);
+}
+.th{
+    text-align: center;
+}
+.box.active{
+    background-color: rgb(12, 69, 119);
+    border: solid green 2px;
+}
+.box.active .title{
+    color: rgb(30, 30,30);
+}
