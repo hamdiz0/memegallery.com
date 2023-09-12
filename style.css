@@ -1,3 +1,7 @@
+*{
+    padding: 0;
+    margin: 0;
+}
 body{
     margin: 0;
     background-color: rgb(30, 30,30);
@@ -13,7 +17,6 @@ button {
 .btn:hover{
     cursor : pointer;
     color: rgb(30, 30,30);
-    font-size: larger;
 }
 .btn{
     position: fixed;
@@ -24,7 +27,7 @@ button {
     text-align: center;
     background: rgb(30, 30,30);
     border: solid rgb(30, 30,30) 2px;
-    font-size: larger;
+    font-size: 120%;
     border-radius: 5px;
     z-index: 1;
     color: green;
@@ -39,6 +42,7 @@ span{
     left: 0;
     bottom: 0;
     z-index: -1;
+    border-radius: 5px;
 }
 button:hover span{
     width: 100%;
@@ -52,6 +56,7 @@ nav{
     top: 0px;
     color: rgb(30, 30,30);
     width: 100%;
+    height: 8.5%;
     z-index: 1;
     text-align: left ;
     background-color: green;
@@ -60,6 +65,7 @@ nav{
 .h{
     position: relative;
     left: 6%;
+    top: 25%;
     font-size: x-large;
     height: 100%;
     width: 100%;
@@ -152,6 +158,7 @@ nav{
     border: solid green 2px;
     border-radius: 5px;
     color: green;
+    text-align: center;
     
 }
 .tit:hover span{
@@ -162,7 +169,8 @@ nav{
     color: rgb(30, 30,30);
 }
 .th{
-    text-align: center;
+    position: relative;
+    top: 25%;
 }
 .box.active{
     background-color: rgb(12, 69, 119);
@@ -170,4 +178,47 @@ nav{
 }
 .box.active .title{
     color: rgb(30, 30,30);
+}
+@media screen and (max-width : 550px){
+    .boxs{
+        top: 47%;
+        left: 2%;
+        width: 95%;
+        height: 52%;
+        border: solid green 2px;
+        border-radius: 5px; 
+    }
+    
+    .play{
+        left: 2%;
+        top: 10%;
+        width: 95%;
+        height: 30%;
+    }
+    .tit{
+        top: 41%;
+        width: 95%;
+        height: 5%;
+        left: 2%;
+    }
+    .th{
+        font-size: 100%;
+    }
+    .h{
+        font-size: 100%;
+        left: 2%;
+    }
+    .btn{
+        right: 0%;
+        top: 0%;
+        width: 30%; 
+        height: 8.5%; 
+        font-size:90%;
+        border: solid green 2px;
+    }
+    nav{
+        height: 8.5%;
+        width: 70%;
+        left: 0;
+    }
 }
